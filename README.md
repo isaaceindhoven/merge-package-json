@@ -3,9 +3,9 @@
 Intelligently merge `package.json` files.
 This is pretty much built for yeoman. It attempts to combine two separate `package.json` files into one, respecting as much existing content as possible including already existing dependencies and `package.json` formatting.
 
-[![NPM](https://nodei.co/npm/merge-package-json.png)](https://nodei.co/npm/merge-package-json/)
+[![NPM](https://nodei.co/npm/@isaac.frontend/merge-package-json.png)](https://nodei.co/npm/@isaac.frontend/merge-package-json/)
 
-[![npm version](https://badge.fury.io/js/merge-package-json.svg)](https://badge.fury.io/js/merge-package-json)
+[![npm version](https://badge.fury.io/js/%40isaac.frontend%2Fmerge-package-json.svg)](https://badge.fury.io/js/%40isaac.frontend%2Fmerge-package-json)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 ## Installation
@@ -13,7 +13,7 @@ This is pretty much built for yeoman. It attempts to combine two separate `packa
 Install this module through npm or clone it:
 
 ```javascript
-npm install --save merge-package-json
+npm install --save @isaac.frontend/merge-package-json
 ```
 
 ## Usage
@@ -114,6 +114,7 @@ results in:
 
 Author - Izaak Schroeder (@izaakschroeder)
 Lead Developer - Enrico Aleandri (@enricoaleandri)
+Contributor - Lucien Immink (@lucienimmink)
 
 ## License
 

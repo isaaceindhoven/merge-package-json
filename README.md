@@ -15,72 +15,69 @@ Install this module through npm or clone it:
 ```javascript
 npm install --save merge-package-json
 ```
+
 ## Usage
 
 ```javascript
-var merge = require('merge-package-json');
-var dst = fs.readFileSync('package.a.json');
-var src = fs.readFileSync('package.b.json');
+var merge = require("merge-package-json");
+var dst = fs.readFileSync("package.a.json");
+var src = fs.readFileSync("package.b.json");
 
 // Create a new `package.json`
 console.log(merge(dst, src));
 ```
 
-
 ```javascript
-var merge = require('merge-package-json');
-var dst = require('package.a.json');
-var src = require('package.b.json');
+var merge = require("merge-package-json");
+var dst = require("package.a.json");
+var src = require("package.b.json");
 
 // Create a new `package.json`
 console.log(merge(dst, src));
 ```
 
-
-
 ```javascript
-var merge = require('merge-package-json');
-var src = require('package.b.json');
-var dst = require('package.a.json');
-var dst2 = require('package.b.json');
+var merge = require("merge-package-json");
+var src = require("package.b.json");
+var dst = require("package.a.json");
+var dst2 = require("package.b.json");
 
 dst = merge(dst, src);
 // Create a new `package.json`
 console.log(dst);
 console.log(merge(dst2, dst));
 ```
+
 It allows you to do things like define scripts or dependencies that you would like to include as part of a larger project.
 
 Merging:
 
 ```json
 {
-	"name": "my-package",
-	"dependencies": {
-		"babel": "^5.2.2",
-		"lodash": "^3.2.5"
-	}
+ "name": "my-package",
+ "dependencies": {
+  "babel": "^5.2.2",
+  "lodash": "^3.2.5"
+ }
 }
 ```
 
 ```json
 {
-	"dependencies": {
-		"babel": "^5.4.1",
-		"eslint": "^0.22.1"
-	}
+ "dependencies": {
+  "babel": "^5.4.1",
+  "eslint": "^0.22.1"
+ }
 }
 ```
-
 
 OR
 
-
 ```json
 {
-	"dependencies": {
-		"text-to-mp3": "^1.0.0"
-	}
+ "dependencies": {
+  "text-to-mp3": "^1.0.0"
+ }
 }
 ```
 
@@ -88,39 +85,38 @@ results in:
 
 ```json
 {
-	"name": "my-package",
-	"dependencies": {
-		"babel": "^5.4.1",
-		"lodash": "^3.2.5",
-		"eslint": "^0.22.1",
-		"text-to-mp3": "^1.0.0"
-	}
+ "name": "my-package",
+ "dependencies": {
+  "babel": "^5.4.1",
+  "lodash": "^3.2.5",
+  "eslint": "^0.22.1",
+  "text-to-mp3": "^1.0.0"
+ }
 }
 ```
 
-# TODO 
-- Add MODE of merge like : 
- - Get Lates
- - Get Oldest 
- - Get Surest ( the less divergent from common used) [ need design ]
+## TODO
 
+- Add MODE of merge like :
+- Get Lates
+- Get Oldest
+- Get Surest ( the less divergent from common used) [ need design ]
 
 ## Contributing
- 
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
- 
- 
+
 ## Credits
- 
+
 Author - Izaak Schroeder (@izaakschroeder)
 Lead Developer - Enrico Aleandri (@enricoaleandri)
- 
+
 ## License
- 
+
 The MIT License (MIT)
 
 Copyright (c) 2017 Enrico Aleandri

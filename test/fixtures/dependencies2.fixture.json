@@ -2,7 +2,7 @@
 	"version": "1.0.0",
 	"dependencies": {
 		"gulp": "~0.8.6",
-		"text-to-mp3": "^1.0.0",
+		"text-to-mp3": "^1.1.2",
 		"express": "^5.0.0",
 		"bigpipe": "bigpipe/pagelet#branch"
 	},

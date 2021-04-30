@@ -1,6 +1,6 @@
 {
 	"name": "@isaac.frontend/merge-package-json",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Intelligently merge `package.json` files.",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
 	"contributors": [
